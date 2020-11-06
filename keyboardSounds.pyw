@@ -7,9 +7,9 @@ keyMap = {}
 def on_press(key):
     if key in keyMap:
         if keyMap[key] == False:
-            playsound(os.path.dirname(os.path.realpath(sys.argv[0]))+"/click.mp3",False)
+            playsound("click.mp3",False)
     else:
-        playsound(os.path.dirname(os.path.realpath(sys.argv[0]))+"/click.mp3",False)
+        playsound("click.mp3",False)
     keyMap[key] = True
         
 def on_release(key):
